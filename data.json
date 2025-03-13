@@ -1,0 +1,62 @@
+{
+  "expertiseCategories": [
+    "Artificial Intelligence",
+    "Software Development",
+    "Data Science",
+    "Digital Marketing",
+    "UX/UI Design",
+    "Cybersecurity",
+    "Financial Services",
+    "HR & Recruitment",
+    "Business Consulting",
+    "Project Management"
+  ],
+  
+  "industryCategories": [
+    "Technology",
+    "Finance",
+    "Education",
+    "Healthcare",
+    "E-commerce",
+    "Real Estate",
+    "Manufacturing",
+    "Media & Entertainment",
+    "FMCG",
+    "Logistics"
+  ],
+  
+  "messageTemplates": {
+    "en": {
+      "expert": [
+        "Hi {{name}}, I noticed your experience in {{expertise}}. I'm running ExpertMatch, a platform connecting specialists with clients. Would you be interested in earning additional income through online consultations?",
+        "Hello {{name}}, I'm impressed by your background in {{expertise}}. I'm developing ExpertMatch, a platform that helps experts like you monetize their knowledge through consulting. Would you be open to a brief conversation about potential collaboration?",
+        "Hi {{name}}, your expertise in {{expertise}} caught my attention. I'm building ExpertMatch, where we connect top specialists with businesses needing their specific knowledge. I'd love to discuss how we could create value for you through our platform.",
+        "Hello {{name}}, I'm reaching out because your work in {{expertise}} is exactly what many of our clients are looking for. I run ExpertMatch, a network of specialists providing consulting services. Would you be interested in learning how you can leverage our platform to find new clients?",
+        "Hi {{name}}, many businesses struggle to find quality expertise in {{expertise}}. I've built ExpertMatch to solve this problem by connecting businesses with specialists like you. Would you be open to discussing how you might benefit from our platform?"
+      ],
+      "client": [
+        "Hi {{name}}, I noticed your company operates in the {{industry}} sector. I run ExpertMatch, a platform connecting businesses with vetted experts. Are you currently looking for specialized support in any areas?",
+        "Hello {{name}}, businesses in {{industry}} often face unique challenges that require specialized expertise. I've built ExpertMatch to provide on-demand access to experts in your field. Would you be interested in learning how this could benefit your team?",
+        "Hi {{name}}, I see you're working in {{industry}}. My platform ExpertMatch helps companies like yours access top expertise without the commitment of full-time hires. Would you be open to a quick chat about how this model might support your business goals?",
+        "Hello {{name}}, I believe there could be synergy between your work in {{industry}} and my platform ExpertMatch. We connect businesses with verified specialists who can provide insights and solutions. Would you be interested in exploring a potential collaboration?",
+        "Hi {{name}}, having worked extensively with companies in {{industry}}, I understand the challenges in finding reliable expert support. That's why I created ExpertMatch - to connect businesses like yours with pre-vetted specialists. Would you be open to discussing how we might support your specific needs?"
+      ]
+    },
+    "pl": {
+      "expert": [
+        "Cześć {{name}}, zauważyłem Twoje doświadczenie w {{expertise}}. Prowadzę platformę ExpertMatch łączącą specjalistów z klientami. Czy byłbyś zainteresowany dodatkowym źródłem przychodów dzięki konsultacjom online?",
+        "Dzień dobry {{name}}, Twoje doświadczenie w {{expertise}} jest imponujące. Rozwijam platformę ExpertMatch i szukam specjalistów takich jak Ty. Czy moglibyśmy porozmawiać o potencjalnej współpracy?",
+        "Witaj {{name}}, cenię Twoją wiedzę w dziedzinie {{expertise}}. Buduję platformę ExpertMatch i zapraszam wysokiej klasy specjalistów. Zainteresowany/a niezobowiązującą rozmową na ten temat?",
+        "Dzień dobry {{name}}, Twoja praca w obszarze {{expertise}} jest dokładnie tym, czego szukają nasi klienci. Prowadzę ExpertMatch, sieć specjalistów świadczących usługi doradcze. Czy chciałbyś/chciałabyś dowiedzieć się, jak możesz wykorzystać naszą platformę do pozyskiwania nowych klientów?",
+        "Cześć {{name}}, wiele firm ma trudności ze znalezieniem specjalistów w dziedzinie {{expertise}}. Stworzyłem ExpertMatch, aby rozwiązać ten problem, łącząc firmy z ekspertami takimi jak Ty. Czy chciałbyś/chciałabyś porozmawiać o korzyściach, jakie nasza platforma może Ci przynieść?"
+      ],
+      "client": [
+        "Cześć {{name}}, zauważyłem, że działasz w branży {{industry}}. Prowadzę platformę ExpertMatch łączącą firmy z ekspertami. Czy obecnie poszukujecie wsparcia w jakichś obszarach?",
+        "Dzień dobry {{name}}, prowadzę platformę ExpertMatch i specjalizujemy się w łączeniu firm z ekspertami z branży {{industry}}. Czy moglibyśmy porozmawiać o tym, jak możemy wesprzeć Twój zespół?",
+        "Witaj {{name}}, widzę że działasz w {{industry}}. Moja platforma ExpertMatch pomaga firmom takim jak Twoja uzyskać dostęp do najlepszych ekspertów bez konieczności zatrudniania ich na pełen etat. Czy byłbyś zainteresowany krótką rozmową o tym, jak ten model mógłby wspierać cele Twojej firmy?",
+        "Dzień dobry {{name}}, uważam, że może istnieć synergia między Twoją pracą w {{industry}} a moją platformą ExpertMatch. Łączymy firmy ze zweryfikowanymi specjalistami, którzy mogą zapewnić wgląd i rozwiązania. Czy byłbyś zainteresowany zbadaniem potencjalnej współpracy?",
+        "Cześć {{name}}, mając duże doświadczenie we współpracy z firmami z branży {{industry}}, rozumiem wyzwania związane ze znalezieniem niezawodnego wsparcia ekspertów. Dlatego stworzyłem ExpertMatch - aby łączyć firmy takie jak Twoja z wcześniej zweryfikowanymi specjalistami. Czy chciałbyś przedyskutować, jak możemy wesprzeć Twoje konkretne potrzeby?"
+      ]
+    }
+  }
+}

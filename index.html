@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Browseen Documentation</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    header {
+      background-color: #4285f4;
+      color: white;
+      padding: 20px;
+      border-radius: 5px;
+      margin-bottom: 30px;
+      display: flex;
+      align-items: center;
+    }
+    .logo {
+      width: 60px;
+      height: 60px;
+      margin-right: 20px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+    header p {
+      margin: 5px 0 0 0;
+      opacity: 0.8;
+    }
+    nav {
+      background-color: #f5f5f5;
+      padding: 15px;
+      border-radius: 5px;
+      margin-bottom: 30px;
+    }
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    nav li {
+      margin-right: 20px;
+      margin-bottom: 5px;
+    }
+    nav a {
+      color: #4285f4;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    section {
+      margin-bottom: 40px;
+    }
+    h2 {
+      color: #4285f4;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 10px;
+      margin-top: 30px;
+    }
+    h3 {
+      color: #3367d6;
+      margin-top: 25px;
+    }
+    code {
+      background-color: #f5f5f5;
+      padding: 2px 5px;
+      border-radius: 3px;
+      font-family: monospace;
+    }
+    pre {
+      background-color: #f5f5f5;
+      padding: 15px;
+      border-radius: 5px;
+      overflow-x: auto;
+      font-family: monospace;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin: 20px 0;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: left;
+    }
+    th {
+      background-color: #f5f5f5;
+    }
+    .command-example {
+      margin-bottom: 20px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      overflow: hidden;
+    }
+    .command-example-header {
+      background-color: #f5f5f5;
+      padding: 10px;
+      font-weight: bold;
+      display: flex;
+      justify-content: space-between;
+    }
+    .try-button {
+      background-color: #4285f4;
+      color: white;
+      border: none;
+      padding: 5px 10px;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+    .command-example-content {
+      padding: 15px;
+      border-top: 1px solid #ddd;
+    }
+    .command-example-description {
+      margin-top: 10px;
+      color: #666;
+    }
+    .note {
+      background-color: #e8f0fe;
+      border-left: 4px solid #4285f4;
+      padding: 15px;
+      margin: 15px 0;
+      border-radius: 0 5px 5px 0;
+    }
+    .warning {
+      background-color: #fef7e0;
+      border-left: 4px solid #fbbc04;
+      padding: 15px;
+      margin: 15px 0;
+      border-radius: 0 5px 5px 0;
+    }
+    footer {
+      text-align: center;
+      margin-top: 50px;
+      padding-top: 20px;
+      border-top: 1px solid #eee;
+      color: #666;
+    }
+    .modal {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 1000;
+    }
+    .modal-content {
+      background-color: white;
+      margin: 10% auto;
+      padding: 20px;
+      border-radius: 5px;
+      width: 60%;
+      max-width: 600px;
+    }
+    .close {
+      float: right;
+      font-size: 24px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="icons/icon128.png" class="logo" alt="Browseen Logo">
+    <div>
+      <h1>Browseen Documentation</h1>
+      <p>Universal Web Interaction Language</p>
+    </div>
+  </header>
+  
+  <nav>
+    <ul>
+      <li><a href="#introduction">Introduction</a></li>
+      <li><a href="#installation">Installation</a></li>
+      <li><a href="#commands">Commands</a></li>
+      <li><a href="#examples">Examples</a></li>
+      <li><a href="#advanced">Advanced Usage</a></li>
+      <li><a href="#troubleshooting">Troubleshooting</a></li>
+    </ul>
+  </nav>
+  
+  <section id="introduction">
+    <h2>Introduction</h2>
+    <p>Browseen is a Chrome extension that enables universal web interaction through semantic commands rather than being tied to specific HTML structures. It allows you to perform common web actions like clicking, typing, scrolling, and even social interactions across any website using simple, intuitive commands.</p>
+    
+    <p>The key benefits of Browseen include:</p>
+    <ul>
+      <li><strong>Platform Agnostic:</strong> Works across different websites with the same commands</li>
+      <li><strong>Resilient to Changes:</strong> Not tied to specific CSS selectors or HTML structures</li>
+      <li><strong>Accessibility-Focused:</strong> Designed for voice commands and assistive technologies</li>
+      <li><strong>Intent-Based:</strong> Commands express what you want to accomplish, not how</li>
+    </ul>
+  </section>
+  
+  <section id="installation">
+    <h2>Installation</h2>
+    <ol>
+      <li>Download or clone the Browseen repository from <a href="https://github.com/browseen/browseen-extension" target="_blank">GitHub</a></li>
+      <li>Open Chrome and navigate to <code>chrome://extensions/</code></li>
+      <li>Enable "Developer mode" using the toggle in the top-right corner</li>
+      <li>Click "Load unpacked" and select the Browseen extension folder</li>
+      <li>The Browseen icon should now appear in your Chrome toolbar</li>
+    </ol>
+    
+    <div class="note">
+      <strong>Note:</strong> Once Browseen is officially released, you'll be able to install it directly from the Chrome Web Store.
+    </div>
+  </section>
+  
+  <section id="commands">
+    <h2>Command Reference</h2>
+    <p>Browseen uses a simple syntax for commands:</p>
+    <pre>ACTION TARGET [PARAMETERS]</pre>
+    
+    <h3>Navigation Commands</h3>
+    <table>
+      <tr>
+        <th>Command</th>
+        <th>Description</th>
+        <th>Example</th>
+      </tr>
+      <tr>
+        <td><code>CLICK</code></td>
+        <td>Click on an element containing specific text</td>
+        <td><code>CLICK 'Sign in'</code></td>
+      </tr>
+      <tr>
+        <td><code>GO TO</code></td>
+        <td>Navigate to a URL or section of the page</td>
+        <td><code>GO TO 'Settings'</code></td>
+      </tr>
+      <tr>
+        <td><code>SCROLL</code></td>
+        <td>Scroll in a specified direction</td>
+        <td><code>SCROLL DOWN 500</code></td>
+      </tr>
+      <tr>
+        <td><code>FIND</code></td>
+        <td>Locate and highlight an element</td>
+        <td><code>FIND 'Login'</code></td>
+      </tr>
+    </table>
+    
+    <h3>Input Commands</h3>
+    <table>
+      <tr>
+        <th>Command</th>
+        <th>Description</th>
+        <th>Example</th>
+      </tr>
+      <tr>
+        <td><code>TYPE</code></td>
+        <td>Type text into an input field</td>
+        <td><code>TYPE 'Hello world' IN 'Search'</code></td>
+      </tr>
+      <tr>
+        <td><code>TOGGLE</code></td>
+        <td>Toggle a checkbox, switch, or similar element</td>
+        <td><code>TOGGLE 'Remember me'</code></td>
+      </tr>
+    </table>
+    
+    <h3>Social Media Commands</h3>
+    <table>
+      <tr>
+        <th>Command</th>
+        <th>Description</th>
+        <th>Example</th>
+      </tr>
+      <tr>
+        <td><code>LIKE</code></td>
+        <td>Like a social media post</td>
+        <td><code>LIKE post CONTAINING 'news'</code></td>
+      </tr>
+      <tr>
+        <td><code>COMMENT</code></td>
+        <td>Add a comment to a social media post</td>
+        <td><code>COMMENT 'Great post!' ON first post</code></td>
+      </tr>
+    </table>
+  </section>
+  
+  <section id="examples">
+    <h2>Command Examples</h2>
+    
+    <div class="command-example">
+      <div class="command-example-header">
+        <span>CLICK 'Sign in'</span>
+        <button class="try-button" data-command="CLICK 'Sign in'">Try It</button>
+      </div>
+      <div class="command-example-content">
+        <p>Clicks on a button, link, or other element containing the text "Sign in".</p>
+        <div class="command-example-description">
+          Browseen will search for elements with matching text content, aria-labels, or other attributes that might indicate a "Sign in" button or link.
+        </div>
+      </div>
+    </div>
+    
+    <div class="command-example">
+      <div class="command-example-header">
+        <span>TYPE 'Hello world' IN 'Search'</span>
+        <button class="try-button" data-command="TYPE 'Hello world' IN 'Search'">Try It</button>
+      </div>
+      <div class="command-example-content">
+        <p>Types "Hello world" into a field labeled or placeholder with "Search".</p>
+        <div class="command-example-description">
+          This will find an input field associated with the text "Search" (through labels, placeholders, or nearby text) and type the specified text character by character.
+        </div>
+      </div>
+    </div>
+    
+    <div class="command-example">
+      <div class="command-example-header">
+        <span>SCROLL DOWN</span>
+        <button class="try-button" data-command="SCROLL DOWN">Try It</button>
+      </div>
+      <div class="command-example-content">
+        <p>Scrolls the page down by a default amount.</p>
+        <div class="command-example-description">
+          You can specify an amount by adding a number after the direction, e.g., <code>SCROLL DOWN 500</code> to scroll down 500 pixels.
+        </div>
+      </div>
+    </div>
+    
+    <div class="command-example">
+      <div class="command-example-header">
+        <span>TOGGLE 'Accept cookies'</span>
+        <button class="try-button" data-command="TOGGLE 'Accept cookies'">Try It</button>
+      </div>
+      <div class="command-example-content">
+        <p>Toggles a checkbox or switch labeled "Accept cookies".</p>
+        <div class="command-example-description">
+          This works with checkboxes, radio buttons, and other toggle-like elements.
+        </div>
+      </div>
+    </div>
+    
+    <div class="command-example">
+      <div class="command-example-header">
+        <span>LIKE post CONTAINING 'news'</span>
+        <button class="try-button" data-command="LIKE post CONTAINING 'news'">Try It</button>
+      </div>
+      <div class="command-example-content">
+        <p>Finds a social media post containing the word "news" and likes it.</p>
+        <div class="command-example-description">
+          Works across various social media platforms including LinkedIn, Facebook, Twitter, etc.
+        </div>
+      </div>
+    </div>
+    
+    <div class="command-example">
+      <div class="command-example-header">
+        <span>COMMENT 'Great post!' ON first post</span>
+        <button class="try-button" data-command="COMMENT 'Great post!' ON first post">Try It</button>
+      </div>
+      <div class="command-example-content">
+        <p>Adds the comment "Great post!" to the first social media post on the page.</p>
+        <div class="command-example-description">
+          You can also target specific posts with <code>COMMENT 'text' ON post CONTAINING 'keyword'</code> or <code>COMMENT 'text' ON nearest post</code>.
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section id="advanced">
+    <h2>Advanced Usage</h2>
+    
+    <h3>Element Targeting</h3>
+    <p>Browseen uses multiple strategies to find elements based on your description:</p>
+    <ul>
+      <li><strong>Text Content:</strong> Elements with exact or partial text match</li>
+      <li><strong>Attributes:</strong> Elements with matching aria-label, placeholder, title, etc.</li>
+      <li><strong>Labels:</strong> Input fields with associated labels</li>
+      <li><strong>Roles:</strong> Elements with specific ARIA roles</li>
+      <li><strong>Proximity:</strong> Elements near the current viewport position</li>
+    </ul>
+    
+    <h3>Context Menu Integration</h3>
+    <p>Browseen adds items to Chrome's right-click context menu for quick access to common commands:</p>
+    <ul>
+      <li><strong>SCROLL DOWN:</strong> Quickly scroll down the page</li>
+      <li><strong>CLICK selected text:</strong> When text is selected, click an element with that text</li>
+      <li><strong>LIKE nearest post:</strong> Like the post closest to your current view</li>
+      <li><strong>COMMENT on nearest post:</strong> Add a comment to the post closest to your current view</li>
+    </ul>
+    
+    <h3>Command History</h3>
+    <p>Browseen keeps track of your command history, making it easy to repeat previous commands. This history is accessible through the extension popup.</p>
+    
+    <div class="warning">
+      <strong>Important:</strong> Browseen doesn't store any sensitive information entered through the TYPE command. Your passwords and personal data remain secure.
+    </div>
+  </section>
+  
+  <section id="troubleshooting">
+    <h2>Troubleshooting</h2>
+    
+    <h3>Common Issues</h3>
+    <table>
+      <tr>
+        <th>Issue</th>
+        <th>Solution</th>
+      </tr>
+      <tr>
+        <td>Command doesn't find the right element</td>
+        <td>Try being more specific with your target text or use quotes for exact matching</td>
+      </tr>
+      <tr>
+        <td>Social media commands don't work</td>
+        <td>Make sure you're on a page with social posts and try using "nearest post" if specific targeting fails</td>
+      </tr>
+      <tr>
+        <td>TYPE command doesn't enter text correctly</td>
+        <td>Some websites use custom input fields; try different targeting methods or be more specific</td>
+      </tr>
+      <tr>
+        <td>Commands don't work on certain websites</td>
+        <td>Some sites with heavy JavaScript or custom UI frameworks may require more specific commands</td>
+      </tr>
+    </table>
+    
+    <h3>Debugging Tips</h3>
+    <ol>
+      <li>Use the <code>FIND</code> command to check if Browseen can locate an element before trying to interact with it</li>
+      <li>Check that the element is visible on screen; Browseen can't interact with hidden elements</li>
+      <li>Try different variations of the target text to improve element matching</li>
+      <li>For complex websites, break down operations into multiple commands</li>
+    </ol>
+  </section>
+  
+  <div id="commandModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h3>Execute Command</h3>
+      <p>Click the Browseen icon in your toolbar and paste this command:</p>
+      <pre id="modalCommand"></pre>
+      <p>Or try one of the example commands from the popup menu.</p>
+    </div>
+  </div>
+  
+  <footer>
+    <p>Browseen &copy; 2025 - Universal Web Interaction Language</p>
+    <p>Made with ❤️ for an accessible web</p>
+  </footer>
+  
+  <script>
+    // Handle Try It buttons
+    const tryButtons = document.querySelectorAll('.try-button');
+    const modal = document.getElementById('commandModal');
+    const modalCommand = document.getElementById('modalCommand');
+    const closeBtn = document.querySelector('.close');
+    
+    tryButtons.forEach(button => {
+      button.addEventListener('click', function() {
+        const command = this.getAttribute('data-command');
+        modalCommand.textContent = command;
+        modal.style.display = 'block';
+      });
+    });
+    
+    closeBtn.addEventListener('click', function() {
+      modal.style.display = 'none';
+    });
+    
+    window.addEventListener('click', function(event) {
+      if (event.target == modal) {
+        modal.style.display = 'none';
+      }
+    });
+    
+    // Smooth scrolling for navigation links
+    document.querySelectorAll('nav a').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href');
+        const targetElement = document.querySelector(targetId);
+        
+        window.scrollTo({
+          top: targetElement.offsetTop - 20,
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+</html>
