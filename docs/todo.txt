@@ -1,0 +1,60 @@
+kontynuujj, podziel projekt na mniejsze pliki:X
+nazwy uzywane w komendach powinny byc niezalezne od wielkosci liter, no letter sensitive, 
+
+Uprość składnie, ułatw tworzenie większych zdań z komendm, dodaj now funkcje
+FIND ALL ACTIVE BUTTONS
+FIND ALL ACTIVE FIELDS
+COPY ALL POSTS
+PASTE TEXT TO FIRST POST
+FIND comment type
+dodatkowo, domyślne ustawienia kursora, np: FOCUS ON FIRST FIELD
+
+DLa przeglðarki:
+go back, go forward, wsyzstkie mozliwe komendy zwiazane z sama przegladarka na stronie www: search, refresh, forward, back, console, debug, network, SCROLL UP, DOWN, SCROLL RIGHT LEFT, 
+
+
+
+Twórz schematy, templates:
+SET login BY
+	SCROLL DOWN TO FOOTER
+	SCROLL DOWN TO CONTENT 'test'
+	SCROLL DOWN TO BUTTON 'test'
+	SCROLL DOWN TO POST CONTENTS 'test'
+	SCROLL DOWN TO POST '*test'
+
+
+Ustawianie zmiennych ywkorzystywanyczh często w komendach:
+SET COMMAND DELAY 10s
+SET mypage MOUSE RESOLUTION 2px
+SET mypage URL https://linkedin.com
+SET mypage DOMAIN linkedin.com
+
+
+#SAVE ALL POSTS TO projects
+SET projects BY ALL POSTS
+SET expectation BY 'Stwórz wycenę załączonych projektów ' 
+CALL API 'CLAUDE' WITH expectation projects
+
+
+RUN SHELL whoami
+
+
+
+CALL login
+CALL 
+
+
+
+o wszystko gówno, bo nie na Twoim kompie
+ to chodzi, żeby weszło na moją pocztę i odpisało na email, a nie że muszę API dotykać a potem chujnia, bo nie ma komu kodu pilnować
+no z API to nigdy nic nie jest stabilne, ale takie rzycie
+dlatego musi być być generyczny automat
+albo nagle dodaja oplaty albo chuj wie co
+
+
+Po przeładowaniu strony przykładowa lista co może zostać kliknięte
+
+Podpowiedzi, co może być następne kliknięte
+
+
+

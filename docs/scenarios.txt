@@ -1,0 +1,141 @@
+# Browseen Test Scenarios
+
+## Social Media Platforms
+
+### Facebook
+1. **Login**: `TYPE 'email@example.com' IN 'Email or phone number'` then `TYPE 'password' IN 'Password'` then `CLICK 'Log In'`
+2. **Post Status**: `CLICK 'What's on your mind'` then `TYPE 'Hello world from Browseen!' IN 'post'` then `CLICK 'Post'`
+3. **Like Post**: `LIKE post CONTAINING 'vacation photos'`
+4. **Comment**: `COMMENT 'Looks amazing!' ON post CONTAINING 'new job'`
+5. **Share Post**: `CLICK 'Share' ON post CONTAINING 'breaking news'` then `CLICK 'Share now'`
+6. **Add Friend**: `CLICK 'Add Friend' ON profile CONTAINING 'John Smith'`
+7. **Change Privacy**: `GO TO 'Settings'` then `CLICK 'Privacy'` then `TOGGLE 'Who can see your future posts'`
+8. **Upload Photo**: `CLICK 'Photo/Video'` then `CLICK 'Upload'`
+
+### Twitter/X
+9. **Tweet**: `CLICK 'What's happening'` then `TYPE 'Testing Browseen automation #tech' IN 'tweet'` then `CLICK 'Tweet'`
+10. **Retweet**: `FIND tweet CONTAINING 'artificial intelligence'` then `CLICK 'Retweet'`
+11. **Follow User**: `GO TO profile 'elonmusk'` then `CLICK 'Follow'`
+12. **Search Hashtag**: `CLICK 'Search'` then `TYPE '#browseen' IN 'search'` then `PRESS 'Enter'`
+13. **View Notifications**: `CLICK 'Notifications'`
+14. **View Direct Messages**: `CLICK 'Messages'`
+15. **Create Poll**: `CLICK 'Tweet'` then `CLICK 'Poll'` then `TYPE 'Do you like Browseen?' IN 'Question'`
+
+### LinkedIn
+16. **Connect with Contact**: `CLICK 'Connect' ON profile CONTAINING 'recruiter'`
+17. **Endorse Skill**: `GO TO profile CONTAINING 'developer'` then `CLICK 'Endorse' NEAR 'JavaScript'`
+18. **Post Job Update**: `CLICK 'Start a post'` then `CLICK 'Celebrate an occasion'` then `CLICK 'New job'`
+19. **Search for Jobs**: `CLICK 'Jobs'` then `TYPE 'software developer' IN 'Search jobs'`
+20. **Follow Company**: `FIND 'Microsoft'` then `CLICK 'Follow'`
+21. **Message Connection**: `CLICK 'Messaging'` then `CLICK on conversation CONTAINING 'project manager'`
+22. **React to Post**: `CLICK 'Insightful' ON post CONTAINING 'market analysis'`
+
+### Instagram
+23. **View Stories**: `CLICK 'Stories'` then `CLICK first story`
+24. **Follow Hashtag**: `SEARCH '#photography'` then `CLICK 'Follow'`
+25. **Save Post**: `CLICK 'Save' ON post CONTAINING 'recipe'`
+26. **View Saved Posts**: `GO TO profile` then `CLICK 'Saved'`
+27. **Like Multiple Photos**: `LIKE all posts ON profile CONTAINING 'travel blogger'`
+28. **Filter Comments**: `CLICK 'View all comments'` then `CLICK 'Most relevant'`
+29. **Start Live Video**: `SWIPE right` then `CLICK 'Live'`
+
+## E-Commerce Platforms
+
+### Amazon
+30. **Search for Product**: `TYPE 'wireless headphones' IN 'Search'` then `CLICK 'Search'`
+31. **Filter Results**: `CLICK 'Price'` then `SELECT '$100-$200'`
+32. **Add to Cart**: `CLICK 'Add to Cart' ON product CONTAINING 'Sony'`
+33. **Proceed to Checkout**: `CLICK 'Proceed to checkout'`
+34. **Select Shipping Address**: `CLICK 'Address' CONTAINING 'home'`
+35. **Apply Coupon**: `TYPE 'SAVE20' IN 'Gift cards & promotional codes'` then `CLICK 'Apply'`
+36. **Check Order Status**: `CLICK 'Returns & Orders'` then `CLICK first order`
+
+### eBay
+37. **Bid on Item**: `FIND auction CONTAINING 'collectible'` then `TYPE '50.00' IN 'bid'` then `CLICK 'Place bid'`
+38. **Buy It Now**: `CLICK 'Buy It Now' ON item CONTAINING 'smartphone'`
+39. **Contact Seller**: `CLICK 'Contact seller'` then `TYPE 'Is this available?' IN 'message'`
+40. **Add to Watchlist**: `CLICK 'Add to watchlist' ON item CONTAINING 'vintage'`
+41. **View Seller Feedback**: `CLICK 'Seller information'` then `CLICK 'Feedback score'`
+42. **Make Offer**: `CLICK 'Make offer'` then `TYPE '45.00' IN 'Your offer'`
+43. **Change Shipping Option**: `CLICK 'Change' NEAR 'Shipping method'` then `SELECT 'Express'`
+
+### Shopify Stores
+44. **Select Product Variant**: `CLICK 'Color' dropdown` then `SELECT 'Blue'`
+45. **Select Size**: `CLICK 'Size' dropdown` then `SELECT 'Medium'`
+46. **View Product Reviews**: `CLICK 'Reviews'` then `SCROLL DOWN`
+47. **Subscribe to Newsletter**: `TYPE 'email@example.com' IN 'email'` then `CLICK 'Subscribe'`
+48. **View Size Chart**: `CLICK 'Size Chart'`
+49. **Add to Wishlist**: `CLICK 'Add to Wishlist'` 
+50. **Track Order**: `GO TO 'Order Tracking'` then `TYPE 'order number' IN 'Order #'`
+
+## Content and Media Platforms
+
+### YouTube
+51. **Play Video**: `CLICK video CONTAINING 'tutorial'`
+52. **Subscribe to Channel**: `CLICK 'Subscribe' ON channel CONTAINING 'tech reviews'`
+53. **Like Video**: `CLICK 'Like' BELOW video CONTAINING 'comedy'`
+54. **Change Video Quality**: `CLICK 'Settings'` then `CLICK 'Quality'` then `SELECT '1080p'`
+55. **Enable Subtitles**: `CLICK 'Subtitles/CC'` then `SELECT 'English'`
+56. **Skip Ad**: `CLICK 'Skip Ad' WHEN visible`
+57. **Add to Playlist**: `CLICK 'Save'` then `CLICK playlist CONTAINING 'Favorites'`
+
+### Netflix
+58. **Browse Category**: `CLICK 'TV Shows'` then `CLICK 'Comedies'`
+59. **Add to My List**: `HOVER ON show CONTAINING 'Stranger'` then `CLICK 'Add to My List'`
+60. **Resume Watching**: `CLICK show IN 'Continue Watching'`
+61. **Change Profile**: `CLICK 'Profiles'` then `SELECT profile CONTAINING 'Kids'`
+62. **Rate Content**: `CLICK 'Thumbs up' ON show CONTAINING 'documentary'`
+63. **Change Language**: `CLICK 'Audio'` then `SELECT 'Spanish'`
+64. **Skip Intro**: `CLICK 'Skip Intro' WHEN visible`
+
+### News Websites
+65. **Filter News Categories**: `CLICK 'Technology'` then `CLICK 'Software'`
+66. **Share Article**: `CLICK 'Share' ON article CONTAINING 'climate'` then `SELECT 'Twitter'`
+67. **Subscribe to Newsletter**: `TYPE 'email@example.com' IN 'newsletter'` then `CLICK 'Sign up'`
+68. **Comment on Article**: `CLICK 'Comments'` then `TYPE 'Interesting perspective' IN 'comment'`
+69. **Search for Topic**: `TYPE 'election results' IN 'Search'`
+70. **Change Region**: `CLICK 'Region'` then `SELECT 'Europe'`
+71. **Save Article**: `CLICK 'Bookmark' ON article CONTAINING 'financial'`
+
+## Productivity and Tools
+
+### Gmail
+72. **Compose Email**: `CLICK 'Compose'` then `TYPE 'recipient@example.com' IN 'To'`
+73. **Add Attachment**: `CLICK 'Attach'` then `SELECT file CONTAINING 'report.pdf'`
+74. **Mark as Important**: `RIGHT CLICK email CONTAINING 'urgent'` then `CLICK 'Mark as important'`
+75. **Create Label**: `CLICK 'More'` then `CLICK 'Create new label'` then `TYPE 'Projects' IN 'name'`
+76. **Archive Email**: `SELECT email CONTAINING 'newsletter'` then `CLICK 'Archive'`
+77. **Search Emails**: `TYPE 'from:john has:attachment' IN 'Search mail'`
+78. **Enable Vacation Responder**: `GO TO 'Settings'` then `CLICK 'Vacation responder'` then `TOGGLE 'On'`
+
+### Google Docs
+79. **Create New Document**: `CLICK 'Blank'` under 'Start a new document'
+80. **Change Font**: `SELECT text CONTAINING 'heading'` then `CLICK 'Font'` then `SELECT 'Arial'`
+81. **Add Comment**: `SELECT paragraph CONTAINING 'introduction'` then `RIGHT CLICK` then `CLICK 'Comment'`
+82. **Share Document**: `CLICK 'Share'` then `TYPE 'colleague@example.com' IN 'People'`
+83. **Insert Image**: `CLICK 'Insert'` then `CLICK 'Image'` then `CLICK 'Upload from computer'`
+84. **Add Heading**: `SELECT text` then `CLICK 'Normal text'` then `SELECT 'Heading 1'`
+85. **Enable Suggestion Mode**: `CLICK 'Editing'` then `CLICK 'Suggesting'`
+
+### Banking Websites
+86. **Check Balance**: `CLICK 'Accounts'` then `CLICK account CONTAINING 'Checking'`
+87. **Transfer Money**: `CLICK 'Transfer'` then `SELECT 'From account'` then `SELECT 'To account'`
+88. **Pay Bill**: `CLICK 'Bill Pay'` then `SELECT payee CONTAINING 'Electricity'`
+89. **Download Statement**: `CLICK 'Statements'` then `CLICK month CONTAINING 'January'` then `CLICK 'Download'`
+90. **Update Contact Info**: `GO TO 'Profile'` then `CLICK 'Contact Information'` then `CLICK 'Edit'`
+91. **Set Travel Notice**: `CLICK 'Card Services'` then `CLICK 'Travel Notice'` then `SELECT destination CONTAINING 'Europe'`
+92. **Mobile Deposit**: `CLICK 'Deposit'` then `CLICK 'Take photo'`
+
+## Miscellaneous 
+
+### Travel Booking
+93. **Search Flights**: `TYPE 'NYC' IN 'From'` then `TYPE 'LAX' IN 'To'` then `CLICK 'Search'`
+94. **Filter Hotels**: `CLICK 'Price'` then `DRAG slider TO '$200'` then `CLICK 'Pool' UNDER 'Amenities'`
+95. **Select Seat**: `CLICK 'Select seats'` then `CLICK seat 'Window'`
+96. **Book Rental Car**: `CLICK 'Add car'` then `SELECT 'SUV' UNDER 'Car type'`
+
+### Job Search Sites
+97. **Upload Resume**: `CLICK 'Upload resume'` then `SELECT file CONTAINING 'resume.pdf'`
+98. **Apply for Job**: `CLICK 'Apply now' ON job CONTAINING 'software engineer'`
+99. **Save Job**: `CLICK 'Save' ON job CONTAINING 'remote'`
+100. **Set Job Alert**: `CLICK 'Create alert'` then `TYPE 'project manager' IN 'Keywords'` then `SELECT 'Daily' IN 'Frequency'`
