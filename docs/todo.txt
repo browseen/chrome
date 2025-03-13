@@ -58,3 +58,9 @@ Podpowiedzi, co może być następne kliknięte
 
 
 
+
+----
+
+Html jest dobrym formatem opisującym metadane, w przypadku, gdy trzeba adresować poprzez xpath dynamiczną treść, np wizualne elementy jak buttons, textarea, itd, to pojawiają się problemy, np. tutaj wycinek HTML z linkedina, do tego został stworzony skrypt, który miał za zadanie automatyzacje wpisywania tekstu do pola dla osób nie widzacych, tworzyć komentarz, klikać w button i polubić różne komenetarze, niestety nie działa poprawnie. 
+
+Przeanalizuj jakie problemy napotyka użytkownik wchodząc na stronę www i stwórz język DSL, który będzie automatycznie realizował generyczne zadania na kazdej stronie internetowej. Problem polega na tym, ze mimo, iż  każda przeglądarka  m apodobny zestaw przycisków i skrótów klawiszowych, to strona www jest zaprojektowana inaczej, mimo, że mają podobne funkcje, stwórz takie rozwiązanie, które będzie realizowało zadania, bez względu na tsrukturę html, tak by realizować podstawowe zadania jak logowanie, wylogowanie, zmiane ustawień konta czy wpisywanie captcha, SMS, z email, i dodawanie komentaerzy, polubienia, itp. Aby stało się to standardem, aby był to jezyk pasujący do każdego rozwiżania dynamicznego opartego o html, aplikację desktop lub mobilną, tak by wydawać komendy głosowe .... i by poprzez prosty NLP, tworzyć generyczne komendy
